@@ -6,8 +6,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage : {
-        
+      width : {
+        '45' : '45.999%'
       }
     },
   },
