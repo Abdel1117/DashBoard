@@ -26,9 +26,9 @@ export default function DataGraph() {
 
     const options = {
         responsive: true,
-        maintainAspectRatio:false,
-        
-                plugins: {
+        maintainAspectRatio: false,
+
+        plugins: {
             legend: {
                 position: 'top'
             },
@@ -60,7 +60,7 @@ export default function DataGraph() {
     };
     return (
         <div className='h-[400px] w-100 object-cover p-4'>
-            <Line options={options} data={data}  />
-        </div> 
+            <Line options={options} data={data} />
+        </div>
     )
 }
