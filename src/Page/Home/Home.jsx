@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { FcBusinessman, FcBusiness, FcPieChart, FcBullish, FcBearish } from "react-icons/fc";
+import { FcBusinessman, FcBusiness, FcPieChart, FcBullish, FcBearish,FcAdvance } from "react-icons/fc";
 import { FiMoreVertical } from 'react-icons/fi';
 import DataGraph from '../../compenants/DataGraph';
 
@@ -66,7 +66,7 @@ export default function Home() {
 
       <section className='mt-6 grid grid-cols-1 md:grid-cols-12 gap-6 pl-3'>
 
-        <div className='w-100 h-fit shadow-lg bg-white py-3 px-4 rounded col-start-1 col-end-9'>
+        <div className='w-100 h-fit shadow-lg bg-white py-3 px-4 rounded md:col-start-1 md:col-end-9'>
           <div className='flex justify-between items-center my-4'>
             <h2 className='text-xl'>Revenue</h2>
             <FiMoreVertical size={"20px"} cursor={"pointer"} />
@@ -88,7 +88,7 @@ export default function Home() {
 
 
         </div>
-        <div className='w-100 h-auto p-4 bg-white shadow-lg rounded col-start-9 col-end-13'>
+        <div className='w-100 h-auto p-4 bg-white shadow-lg rounded md:col-start-9 md:col-end-13'>
           <h2 className='text-xl my-2'>Revenue By Location</h2>
           <div className='w-100 h-100'>
             <svg width={100 + "%"} height={100 + "%"}>
@@ -99,14 +99,14 @@ export default function Home() {
 
       </section>
 
-      <section className='mt-4 pl-3 grid grid-cols-1 lg:grid-cols-12 gap-4'>
-        <div className='bg-white px-8 py-4 col-span-6 shadow-lg'>
+      <section className='mt-4 md:pl-3 grid grid-cols-1 md:grid-cols-12 md:gap-4'>
+        <div className='bg-white md:px-8 py-4 md:col-span-6 shadow-lg'>
           <div className='flex justify-between'>
             <h2 className='text-xl uppercase'>Top Selling Products</h2>
             <button>Export </button>
           </div>
           <div className='w-100 mt-8 overflow-x-auto relative shadow-md sm:rounded-lg"'>
-            <table className='w-full border-collapse  border-slate-400'>
+            <table className='w-full border-collapseborder-slate-400'>
               <tbody>
                 <tr className='py-3 px-6 bg-white border-b hover:bg-gray-50 '>
                   <td className='py-3 px-6'>ASOS Ridley High Waist
@@ -167,8 +167,122 @@ export default function Home() {
           </div>
 
         </div>
-        <div className='bg-white p-4 col-span-3 shadow-lg'>
-          
+        <div className='bg-white p-4 col-span-3 shadow-lg overflow-y-scroll max-h-[624px]'>
+              <div className='flex align-items justify-between mb-4'>
+                <h2 className='text-md uppercase'>Recent Activity</h2>
+                <FiMoreVertical size={"20px"} cursor={"poiner"} />
+              </div>
+              
+            <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
+              <div className='mx-auto relative'>
+              
+              <div className='w-4 h-4 my-auto mt-1 bg-red-600 rounded-full float-left' />
+
+                <div className='ml-6'>
+                  <a className=' block' href="">You sold an item</a>
+                  
+                  <small>Paul Burges just purchased "Hyper ADmin DashBoard" </small>
+                  <p className=''><small>30 minutes ago</small></p>
+                </div>
+              </div>
         </div>
       </section>
     </>
